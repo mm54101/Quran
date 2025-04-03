@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القرآن الكريم - Alquran.cloud API</title>
+    <link rel="stylesheet" href="allst.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <div class="logo">
+                <i class="fas fa-quran"></i>
+                <span>القرآن الكريم</span>
+            </div>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="ابحث في القرآن...">
+            </div>
+        </div>
+    </header>
+    <!-- استبدل قسم السايدبار بالكود التالي -->
+<button id="toggle-sidebar" class="toggle-sidebar-btn">
+    <i class="fas fa-bars"></i> فهرس السور
+</button>
+
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h2>فهرس السور</h2>
+        <button id="close-sidebar" class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    
+    <div class="juz-selector">
+        <select id="juz-select">
+            <option value="0">كل الأجزاء</option>
+            <!-- سيتم ملئها بالجافاسكريبت -->
+        </select>
+    </div>
+    
+    <div class="search-box">
+        <input type="text" id="surah-search" placeholder="ابحث عن سورة...">
+    </div>
+    
+    <ul class="surah-list" id="surah-list">
+        <!-- سيتم ملئها بالجافاسكريبت -->
+    </ul>
+</aside>
+            </div>
+            
+            <ul class="surah-list" id="surah-list">
+                <!-- سيتم ملئها بالجافاسكريبت -->
+            </ul>
+        </aside>
+        
+        <main class="content">
+            <div class="surah-header">
+                <h1 class="surah-name" id="surah-name">سورة الفاتحة</h1>
+                <div class="surah-meta" id="surah-meta">
+                    <span>مكية</span>
+                    <span>7 آيات</span>
+                </div>
+            </div>
+            
+            <div class="bismillah" id="bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+            
+            <div class="ayah-container" id="ayah-container">
+                <!-- سيتم ملئها بالجافاسكريبت -->
+            </div>
+            
+            <div class="navigation">
+                <button id="prev-surah" class="nav-btn">
+                    <i class="fas fa-arrow-right"></i> السورة السابقة
+                </button>
+                <button id="next-surah" class="nav-btn">
+                    السورة التالية <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="qu.js"></script>
+</body>
+</html>
